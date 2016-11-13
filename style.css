@@ -1,0 +1,50 @@
+/*
+Theme Name: wpbootstrap
+*/
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.navbar-inverse {
+  background-color: #424672;
+  border-color: #424672;
+}
+
+.jumbotron {
+  height: 600px;
+  padding: 100px 20px;
+  text-align: center;
+  border-bottom: #ccc 1px solid;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.jumbotron h1 {
+  font-size: 55px;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.boxes {
+  text-align: center;
+  background: #fff;
+  margin-bottom: 30px;
+}
+
+.boxes .fa {
+  font-size: 45px !important;
+  margin-bottom: 10px;
+}
+
+.box {
+  padding: 15px;
+  border: #ccc 1px solid;
+}
