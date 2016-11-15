@@ -6,13 +6,16 @@
   function wpb_theme_setup(){
     // Nav Menus
     register_nav_menus(array(
-      'primary' => __('Primary Menu')
+      'primary' => __('Primary Menu'),
+      'secondary' => __('Secondary Menu')
     ));
   }
 
   add_action('after_setup_theme','wpb_theme_setup');
-  //Widget Locations
+  // Widget Locations
   function wpb_init_widgets($id){
+
+    // Content Boxes
     register_sidebar(array(
       'name' => 'Box1',
       'id' => 'box1',
@@ -61,6 +64,34 @@
     register_sidebar(array(
       'name' => 'Box6',
       'id' => 'box6',
+      'before_widget' => '<div class="box">',
+      'after_widget' => '</div>',
+      'before_title' => '<h2>',
+      'after_title' => '</h2>'
+    ));
+
+    //Testimonial Boxes
+    register_sidebar(array(
+      'name' => 'Testimonial1',
+      'id' => 'testimonial1',
+      'before_widget' => '<div class="box">',
+      'after_widget' => '</div>',
+      'before_title' => '<h2>',
+      'after_title' => '</h2>'
+    ));
+
+    register_sidebar(array(
+      'name' => 'Testimonial2',
+      'id' => 'testimonial2',
+      'before_widget' => '<div class="box">',
+      'after_widget' => '</div>',
+      'before_title' => '<h2>',
+      'after_title' => '</h2>'
+    ));
+
+    register_sidebar(array(
+      'name' => 'Testimonial3',
+      'id' => 'testimonial3',
       'before_widget' => '<div class="box">',
       'after_widget' => '</div>',
       'before_title' => '<h2>',

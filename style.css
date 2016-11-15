@@ -8,9 +8,33 @@ body {
   padding-bottom: 20px;
 }
 
-.navbar-inverse {
-  background-color: #424672;
-  border-color: #424672;
+html, body {
+  height: 100%;
+}
+
+body {
+  padding: 50px 0 0 0;
+}
+
+.navbar-toggle {
+  float: left;
+  margin-left: 15px;
+}
+
+#navmenu-secondary > ul {
+    border-top: 2px solid #ccc;
+}
+
+@media (min-width: 0) {
+  .navbar-toggle {
+    display: block; /* force showing the toggle */
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    padding: 0;
+  }
 }
 
 .jumbotron {
@@ -24,13 +48,28 @@ body {
 
 .jumbotron h1 {
   font-size: 55px;
-  padding-bottom: 20px;
+  padding: 5px;
   color: #fff;
 }
 
 .jumbotron p {
   font-size: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+}
+
+.jumbotron p > .btn-primary {
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+
+.btn-primary {
+  background-color: #ff8123;
+  border-color: #ff8123;
+}
+
+.btn-primary:hover {
+  background-color: #ff8123;
+  border-color: #ff8123;
 }
 
 .boxes {
@@ -45,6 +84,23 @@ body {
 }
 
 .box {
-  padding: 15px;
-  border: #ccc 1px solid;
+  padding: 30px;
+  border: none;
+}
+
+.testimonials {
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: #333;
+  color: #fff;
+}
+
+.testimonials .row {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+footer {
+  padding: 20px;
 }
